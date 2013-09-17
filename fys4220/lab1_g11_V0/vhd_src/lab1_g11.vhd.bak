@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity lab1_g11 is
+port
+(
+	LEDR : out std_logic_vector(17 downto 0); -- Red LEDs
+	SW 	 : in std_logic_vector(17 downto 0)); -- Switches
+	end entity lab_g11;
+	
+	architecture top_level of lab_g11 is
+	begin
+	
+	-- lab 1a: Assign all switches to LEDs
+	LEDR <= SW;
+	
+	end architecture top_level;

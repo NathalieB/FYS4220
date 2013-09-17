@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\pc\Desktop\fys4220\lab1_g11\simulation\modelsim
+Elab1_g11
+Z1 w1378989180
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dM:\pc\Desktop\fys4220\lab1_g11\simulation\modelsim
+Z5 8M:/pc/Desktop/fys4220/lab1_g11/vhd_src/lab1_g11.vhd
+Z6 FM:/pc/Desktop/fys4220/lab1_g11/vhd_src/lab1_g11.vhd
+l0
+L4
+V3T5`O[@eGk2zHb7f1<??G1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1378989218.481000
+Z9 !s90 -reportprogress|300|-93|-work|work|M:/pc/Desktop/fys4220/lab1_g11/vhd_src/lab1_g11.vhd|
+Z10 !s107 M:/pc/Desktop/fys4220/lab1_g11/vhd_src/lab1_g11.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 NTM6n;6<7zBgc1Gh[hGMO3
+!i10b 1
+Atop_level
+R2
+R3
+DEx4 work 8 lab1_g11 0 22 3T5`O[@eGk2zHb7f1<??G1
+l13
+L12
+VE8KFTzBCmhT=gCh??DR0_3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 2M=IjQ3fB;aDgGi>:MzQ21
+!i10b 1
+Etb_lab1_g11
+Z13 w1378988016
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd
+Z16 FM:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd
+l0
+L5
+V3ZT1emiVY6MQNF^MoB^l<3
+!s100 6]=DW1:k9Sz9Ri6M7EfhT1
+R7
+31
+!i10b 1
+Z17 !s108 1378989219.168000
+Z18 !s90 -reportprogress|300|-93|-work|work|M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd|
+Z19 !s107 M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd|
+R11
+R12
+Atestbench
+R14
+R2
+R3
+DEx4 work 11 tb_lab1_g11 0 22 3ZT1emiVY6MQNF^MoB^l<3
+l22
+L8
+VRB@`;]hNVkCQ]S8QHniIb3
+!s100 AcIKz8GnK7fn6KI5_be`U2
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12

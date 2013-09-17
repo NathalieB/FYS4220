@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dM:\pc\Desktop\fys4220\lab1_g11\simulation\modelsim
+Elab1_g11
+Z1 w1378986297
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+Z8 dM:\pc\Desktop\fys4220\lab1_g11\simulation\modelsim
+Z9 8lab1_g11.vho
+Z10 Flab1_g11.vho
+l0
+L34
+V@TH1PO[_23DT=c?P?H>5S2
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1378987902.268000
+Z13 !s90 -reportprogress|300|-93|-work|work|lab1_g11.vho|
+Z14 !s107 lab1_g11.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 f<NZ?1NMa6N_z`FU7N6DL3
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 lab1_g11 0 22 @TH1PO[_23DT=c?P?H>5S2
+l88
+L74
+V4eHNZPk?M6fDdzc;O2?`>2
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 DGZoaK?ZamU:TEZjSP_i40
+!i10b 1
+Etb_lab1_g11
+Z17 w1378987703
+Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R5
+R6
+R8
+Z19 8M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd
+Z20 FM:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd
+l0
+L5
+V3ZT1emiVY6MQNF^MoB^l<3
+!s100 6]=DW1:k9Sz9Ri6M7EfhT1
+R11
+31
+!i10b 1
+Z21 !s108 1378987903.002000
+Z22 !s90 -reportprogress|300|-93|-work|work|M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd|
+Z23 !s107 M:/pc/Desktop/fys4220/lab1_g11/vhd_src/tb_lab1_g11.vhd|
+R15
+R16
+Atestbench
+R18
+R5
+R6
+DEx4 work 11 tb_lab1_g11 0 22 3ZT1emiVY6MQNF^MoB^l<3
+l22
+L8
+VQUo3FFgY37489nbT;V_X<2
+!s100 =jF:F_n7IM5f<8Y`Qz<Jz2
+R11
+31
+!i10b 1
+R21
+R22
+R23
+R15
+R16
