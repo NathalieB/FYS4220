@@ -100,5 +100,84 @@ A - Switches and LEDs
 B - 7-segment decoder with functional and timing simulation
 \end_layout
 
+\begin_layout Standard
+10.
+ 
+\end_layout
+
+\begin_layout Section
+4-bit Counter and push Button
+\end_layout
+
+\begin_layout Standard
+11.
+ After pressing KEY0, we can see that the value displayed seems to jump
+ from a value to another, discontinously.
+ We cannot see the counter incrementing smoothly, by step of 1, and this
+ is rather expected.
+ Indeed, the frequency of the clock is 50MHz.
+ This means that the value of the counter changes every 20ns as long as
+ the button KEY0 is pushed.
+\end_layout
+
+\begin_layout Standard
+We could see the value of the counter be incremented by step of 1 by delaying
+ the clock, or by implementing a boolean which would block block the value
+ of the counter after once incrementation, when KEY0 is pressed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+counter <= "0000" when reset_n = '1' 
+\end_layout
+
+\begin_layout LyX-Code
+else unsigned(std_logic_vector(unsigned(counter) +1)) 
+\end_layout
+
+\begin_layout LyX-Code
+when rising_edge(clk50) and ext_ena_n = '0' 
+\end_layout
+
+\begin_layout LyX-Code
+and (countenable = false); 
+\end_layout
+
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout LyX-Code
+with ext_ena_n select countenable <= false when '1'
+\end_layout
+
+\begin_layout LyX-Code
+, true when others;
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Implementation of the blocking boolean
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
