@@ -126,10 +126,10 @@ Blinking LEDs
 \end_inset
 
 We checked that this algorithm produced exactly what we wanted on the board:
- it linked the switches to the LEDs, allowing us to make them blink by pusshing
+ it linked the switches to the LEDs, allowing us to make them blink by pushing
  the switches.
- This simple pieace of code tooc allowed us to discover how to map the compoonen
-ts of the DE2-70 board manually.
+ This simple piece of code too allowed us to discover how to map the components
+ of the DE2-70 board manually.
 \end_layout
 
 \begin_layout Subsection*
@@ -186,9 +186,9 @@ Functional simulation
  The gate simulation gives us a timing result slightly different from the
  RTL simulation.
  It can be explained by the fact that the components, even though they are
- kind of close, still induce a physical delay.
- So when the RTL simulation only check the functional result of the system,
- so there is no timing information, the gate simulation takes into account
+ kind of physically close, still induce a delay.
+ So when the RTL simulation only checks the functional result of the system
+ (so there is no timing information), the gate simulation takes into account
  delays.
  And we can notice that a transition of 5 ns is way too fast for the system
  to work the way we expect it to work.
