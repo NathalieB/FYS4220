@@ -96,6 +96,42 @@ Getting Started
 A - Switches and LEDs
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename algo_1ere.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Blinking LEDs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+We checked that this algorithm produced exactly what we wanted on the board:
+ it linked the switches to the LEDs, allowing us to make them blink by pusshing
+ the switches.
+ This simple pieace of code tooc allowed us to discover how to map the compoonen
+ts of the DE2-70 board manually.
+\end_layout
+
 \begin_layout Subsection*
 B - 7-segment decoder with functional and timing simulation
 \end_layout
@@ -106,20 +142,137 @@ We want here to implement a 7-segment decoder displayed on the output HEX0
 \end_layout
 
 \begin_layout Standard
+7.
+ Running the functional simulation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename screen_11_RTL_2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Functional simulation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 10.
- 
+ The gate simulation gives us a timing result slightly different from the
+ RTL simulation.
+ It can be explained by the fact that the components, even though they are
+ kind of close, still induce a physical delay.
+ So when the RTL simulation only check the functional result of the system,
+ so there is no timing information, the gate simulation takes into account
+ delays.
+ And we can notice that a transition of 5 ns is way too fast for the system
+ to work the way we expect it to work.
+ Thus, the output HEX0 takes random values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename screen_Gate_10.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Real Time simulation with transitions of 5 ns
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 11.We increased the time between the transition on SW from 5 ns to 20 ns.
- And the outcome of the simulation obviously changed: indeed the whole simulatio
-n takes in place in 20 ns.
- Thus, with a transition of 20 ns, we can see only one of them! 
+ And the outcome of the simulation obviously changed: the system became
+ more stable.
 \end_layout
 
 \begin_layout Standard
-12.
+\align left
+12.We can evaluate the time it takes before a transaction on the SW input
+ results in a stable signal on HEX0 as 11,48ns.
  
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename screen_12_Gate.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Real time simulation with transitions of 20 ns
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -171,11 +324,11 @@ and (countenable = false);
 \end_layout
 
 \begin_layout LyX-Code
-with ext_ena_n select countenable <= false when '1'
+with ext_ena_n select countenable <= false when '1',
 \end_layout
 
 \begin_layout LyX-Code
-, true when others;
+true when others;
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -194,6 +347,22 @@ Implementation of the blocking boolean
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Finally, we learned how to use Quartus (at least in its most basic features),
+ and how to manage the tools provided with ModelSim.
+ We encountered problems, some of them lead us to find a work around method
+ (f.e., we had to deal with a system file already existing on the computer
+ we were using, and preventing the compilation to go on.
+ We still don't know why this problem occured, but achieved to continue
+ anyway), and had to start from anew since we were used to Xilink, but this
+ lab work really helped us to remember the main problems when programming
+ a FPGA: the timing, and sequential, parallel programmation.
 \end_layout
 
 \end_body

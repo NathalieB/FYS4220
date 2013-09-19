@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab1_g11
-Wed Sep 18 23:47:39 2013
+Thu Sep 19 13:56:06 2013
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Sep 18 23:47:39 2013 ;
+; EDA Netlist Writer Status ; Successful - Thu Sep 19 13:56:06 2013 ;
 ; Revision Name             ; lab1_g11                              ;
 ; Top-level Entity Name     ; lab1_g11                              ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                       ;
-+----------------------------------------------------------------------------------+
-; Generated Files                                                                  ;
-+----------------------------------------------------------------------------------+
-; E:/Semester 9/FYS4220/fys4220/lab1_g11/simulation/modelsim/lab1_g11.vho          ;
-; E:/Semester 9/FYS4220/fys4220/lab1_g11/simulation/modelsim/lab1_g11_fast.vho     ;
-; E:/Semester 9/FYS4220/fys4220/lab1_g11/simulation/modelsim/lab1_g11_vhd.sdo      ;
-; E:/Semester 9/FYS4220/fys4220/lab1_g11/simulation/modelsim/lab1_g11_vhd_fast.sdo ;
-+----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                      ;
++-------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                 ;
++-------------------------------------------------------------------------------------------------+
+; C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/simulation/modelsim/lab1_g11.vho          ;
+; C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/simulation/modelsim/lab1_g11_fast.vho     ;
+; C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/simulation/modelsim/lab1_g11_vhd.sdo      ;
+; C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/simulation/modelsim/lab1_g11_vhd_fast.sdo ;
++-------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Sep 18 23:47:37 2013
+    Info: Processing started: Thu Sep 19 13:56:05 2013
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off lab1_g11 -c lab1_g11
-Info (204026): Generated files "lab1_g11.vho", "lab1_g11_fast.vho", "lab1_g11_vhd.sdo" and "lab1_g11_vhd_fast.sdo" in directory "E:/Semester 9/FYS4220/fys4220/lab1_g11/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "lab1_g11.vho", "lab1_g11_fast.vho", "lab1_g11_vhd.sdo" and "lab1_g11_vhd_fast.sdo" in directory "C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 400 megabytes
-    Info: Processing ended: Wed Sep 18 23:47:39 2013
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Sep 19 13:56:06 2013
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

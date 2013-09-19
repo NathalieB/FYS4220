@@ -1,25 +1,28 @@
 # Reading C:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
-# do lab1_g11_run_msim_rtl_vhdl.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
+# do lab1_g11_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Copying C:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # ** Warning: Copied C:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/lab1_g11.vhd}
+# vcom -93 -work work {lab1_g11.vho}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
 # -- Compiling entity lab1_g11
-# -- Compiling architecture top_level of lab1_g11
+# -- Compiling architecture structure of lab1_g11
 # 
-# vcom -93 -work work {E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/tb_lab1_g11.vhd}
+# vcom -93 -work work {C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,18 +31,30 @@
 # -- Compiling entity tb_lab1_g11
 # -- Compiling architecture testbench of tb_lab1_g11
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_lab1_g11
-# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_lab1_g11 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /UUT=lab1_g11_vhd.sdo -L cycloneii -L gate_work -L work -voptargs="+acc"  tb_lab1_g11
+# vsim +transport_int_delays +transport_path_delays -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -sdftyp /UUT=lab1_g11_vhd.sdo -t 1ps tb_lab1_g11 
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.tb_lab1_g11(testbench)
-# Loading work.lab1_g11(top_level)
-# ** Warning: (vsim-8683) Uninitialized out port /tb_lab1_g11/UUT/LEDR(17 downto 0) has no driver.
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
 # 
-# This port will contribute value (UUUUUUUUUUUUUUUUUU) to the signal network.
-# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.lab1_g11(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading instances from lab1_g11_vhd.sdo
+# Loading timing data from lab1_g11_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab1_g11 File: C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd
 # 
 # add wave *
 # view structure

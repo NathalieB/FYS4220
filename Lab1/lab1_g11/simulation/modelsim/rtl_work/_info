@@ -2,35 +2,35 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\Semester 9\FYS4220\fys4220\lab1_g11\simulation\modelsim
+Z0 dC:\Users\Natsu\Documents\GitHub\FYS4220\Lab1\lab1_g11\simulation\modelsim
 Elab1_g11
-Z1 w1379435176
+Z1 w1379582947
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z5 dE:\Semester 9\FYS4220\fys4220\lab1_g11\simulation\modelsim
-Z6 8E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/lab1_g11.vhd
-Z7 FE:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/lab1_g11.vhd
+Z5 dC:\Users\Natsu\Documents\GitHub\FYS4220\Lab1\lab1_g11\simulation\modelsim
+Z6 8C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/lab1_g11.vhd
+Z7 FC:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/lab1_g11.vhd
 l0
 L5
-VAV`]U6:S38b?8zE_6eik`3
+VUVUKX0H5K2`YA4NP6_ejU1
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1379435769.835000
-Z10 !s90 -reportprogress|300|-93|-work|work|E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/lab1_g11.vhd|
-Z11 !s107 E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/lab1_g11.vhd|
+Z9 !s108 1379586632.327000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/lab1_g11.vhd|
+Z11 !s107 C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/lab1_g11.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
-!s100 _T<OAYkoLPggPEB@22XOk1
+!s100 RCKTk6KGoSZOcALmiC4TB0
 !i10b 1
 Atop_level
 R2
 R3
 R4
-DEx4 work 8 lab1_g11 0 22 AV`]U6:S38b?8zE_6eik`3
-l24
+DEx4 work 8 lab1_g11 0 22 UVUKX0H5K2`YA4NP6_ejU1
+l25
 L20
-VQGA84ZdZYR2U`[8e]77R90
+VE8KFTzBCmhT=gCh??DR0_3
 R8
 31
 R9
@@ -38,16 +38,16 @@ R10
 R11
 R12
 R13
-!s100 E:bPDh?iVnEi]llh^Vl<B2
+!s100 TeHJgbW02b5RZl@CaFMPT1
 !i10b 1
 Etb_lab1_g11
-Z14 w1379425938
+Z14 w1379582885
 R2
 R3
 R4
 R5
-Z15 8E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/tb_lab1_g11.vhd
-Z16 FE:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/tb_lab1_g11.vhd
+Z15 8C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd
+Z16 FC:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd
 l0
 L5
 V3ZT1emiVY6MQNF^MoB^l<3
@@ -55,9 +55,9 @@ V3ZT1emiVY6MQNF^MoB^l<3
 R8
 31
 !i10b 1
-Z17 !s108 1379435770.473000
-Z18 !s90 -reportprogress|300|-93|-work|work|E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/tb_lab1_g11.vhd|
-Z19 !s107 E:/Semester 9/FYS4220/fys4220/lab1_g11/vhdl_src/tb_lab1_g11.vhd|
+Z17 !s108 1379586632.525000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd|
+Z19 !s107 C:/Users/Natsu/Documents/GitHub/FYS4220/Lab1/lab1_g11/vhdl_src/tb_lab1_g11.vhd|
 R12
 R13
 Atestbench
@@ -65,10 +65,10 @@ R2
 R3
 R4
 DEx4 work 11 tb_lab1_g11 0 22 3ZT1emiVY6MQNF^MoB^l<3
-l32
+l33
 L8
-V^UK]Bn5:>L3f<PmB;7Noi2
-!s100 _V_jF[8z>H8cgOUQlGZ??2
+VA^_iXXO09cin>M1;<Q?G:3
+!s100 bWXcPdP;@z4g[ANK<@Fcf0
 R8
 31
 !i10b 1

@@ -8,36 +8,36 @@ port
 	-- Part 1
 	LEDR : out std_logic_vector(17 downto 0); -- Red LEDs
 	SW   : in std_logic_vector(3 downto 0); -- Switches
-	HEX0 : out std_logic_vector(6 downto 0); --  additional output port
+	HEX0 : out std_logic_vector(6 downto 0)--; --  additional output port
 	
-	-- Part 2
-	clk50 		: in std_logic;
-	reset_n 		: in std_logic;
-	ext_ena_n 	: std_logic
+	-- Part 2s
+--	clk50 		: in std_logic;
+--	reset_n 		: in std_logic;
+--	ext_ena_n 	: std_logic
 );
 	end entity lab1_g11;
 	
 	architecture top_level of lab1_g11 is
 	-- Internal signal declaration
-	signal counter : unsigned(3 downto 0) := "0000";
-	-- signal countenable : boolean := false ; --(1 downto 0) := " std_logic
+	--signal counter : unsigned(3 downto 0) := "0000";
+	--signal countenable : boolean := false ; --(1 downto 0) := " std_logic
 	
 	begin
 	
 	-- lab 1a: Assign all switches to LEDs
-	-- LEDR <= SW;
+	 --LEDR <= SW;
 	-- Part 2
 ----		if not ext_ena_n then
 			--counter <= std_logic_vector(unsigned(counter) + 1)  when rising_edge(clk50);
-			counter <= "0000" when reset_n = '1'
-			else unsigned(std_logic_vector(unsigned(counter) +1)) when rising_edge(clk50) and ext_ena_n = '0' and (countenable = false);
-			
-			 with ext_ena_n select
-			 countenable <= false when  '1',
-			 true when others;
+--			counter <= "0000" when reset_n = '1'
+--			else unsigned(std_logic_vector(unsigned(counter) +1)) when rising_edge(clk50) and ext_ena_n = '0' and (countenable = false);
+--			
+--			 with ext_ena_n select
+--			 countenable <= false when  '1',
+--			 true when others;
 ----	end if;
 		
-	with counter select
+	with SW(3 downto 0) select
 		HEX0 <= "1000000" when "0000", -- 0
 		"1111001" when "0001", -- 1
 		"0100100" when "0010", -- 2
