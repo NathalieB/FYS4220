@@ -75,6 +75,38 @@ Kévin Zaporogezt and Nathalie Bonatout
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList algorithm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Introduction
 \end_layout
@@ -188,11 +220,14 @@ Functional simulation
  It can be explained by the fact that the components, even though they are
  kind of physically close, still induce a delay.
  So when the RTL simulation only checks the functional result of the system
- (so there is no timing information), the gate simulation takes into account
- delays.
+ (so there is no timing information here), the gate simulation takes delays
+ into account.
  And we can notice that a transition of 5 ns is way too fast for the system
  to work the way we expect it to work.
- Thus, the output HEX0 takes random values.
+ Indeed, the intern frequency of the DE2-70 is 50MHz.
+ So it allows us to change state every 20 ns.
+ Thus, the output HEX0 takes from times to times random values with the
+ gate simulation.
 \end_layout
 
 \begin_layout Standard
@@ -233,7 +268,16 @@ Real Time simulation with transitions of 5 ns
 \begin_layout Standard
 11.We increased the time between the transition on SW from 5 ns to 20 ns.
  And the outcome of the simulation obviously changed: the system became
- more stable.
+ more stable, but still has some unpredictable behaviors, which can be explained
+ by the 
+\begin_inset Quotes eld
+\end_inset
+
+physical delay
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -333,6 +377,39 @@ true when others;
 
 \begin_layout Plain Layout
 Implementation of the blocking boolean
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename screen_IIa.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Functional simulation for the counter
 \end_layout
 
 \end_inset
